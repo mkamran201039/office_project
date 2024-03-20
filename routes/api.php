@@ -20,6 +20,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // Example routes
+//Route::apiResource('user', App\Http\Controllers\UserController::class);
+
+
+
 Route::get('/index', 'App\Http\Controllers\UserController@index');
 Route::get('/index2/{id}', 'App\Http\Controllers\UserController@index2');
 Route::post('/store', 'App\Http\Controllers\UserController@store');
+Route::post('/store2', 'App\Http\Controllers\UserController@store2');
+Route::put('/update/{id}', 'App\Http\Controllers\UserController@update');
+Route::delete('/delete/{id}', 'App\Http\Controllers\UserController@destroy');

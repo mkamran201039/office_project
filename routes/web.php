@@ -18,5 +18,22 @@ Route::get('/', function () {
 });
 
 
+Route::get('/create', function () {
+    return view('create');
+});
+
+
+
+Route::get('/read', function () {
+    return view('read');
+});
+
+
+Route::get('/delete', function () {
+    return view('delete');
+});
+
+
+
 
 
